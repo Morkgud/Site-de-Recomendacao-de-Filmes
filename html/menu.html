@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../javascript/menu.js"></script>
+    <style>
+        /* Estilo interno */
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <!--cabeçalho e links-->
+    <header>
+        <h1>Catálogo de Recomendações</h1>
+            <nav>
+                <ul class="menu">
+                  <li id="menu-item1"><a href="../html/catalogo.html">Catálogo</a></li>
+                  <li id="menu-item2"><a href="../html/contato.html">Contato</a></li>
+                  <li id="menu-item3"><a href="../html/detalhes.html">Detalhes dos filmes</a></li>
+                  <li id="menu-item4"><a href="../html/ranking.html">Ranking</a></li>
+                  <button onclick="toggleColorsAndImage()">Alterar cores</button>
+                </ul>
+            </nav>
+      </header>
+
+      <!--Conteúdo-->
+    <main>
+        <section>
+            <h2>Filmes em Destaque</h2>
+            <div class="filme-destaque">
+                <img src="../imgs/DrivePoster.jpg" alt="Filme 1">
+                <h3>Drive</h3>
+                <p>Gênero: Ação/Crime</p>
+                <p>Diretor: Nicolas Winding Refn</p>
+            </div>
+            <div class="filme-destaque">
+                <img src="../imgs/InterstellarPoster.jpg" alt="Filme 2">
+                <h3>Interestelar</h3>
+                <p>Gênero: Ficção científica/Aventura</p>
+                <p>Diretor: Christopher Nolan</p>
+            </div>
+            <div class="filme-destaque">
+                <img src="../imgs/DjangoLivre.jpg" alt="Filme 3">
+                <h3>Django livre</h3>
+                <p>Gênero: Faroeste/Drama</p>
+                <p>Diretor: Quentin Tarantino</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tabela</h2>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Gênero</th>
+                    <th>Diretor</th>
+                </tr>
+                <tr>
+                    <td>Drive</td>
+                    <td>Ação/Crime</td>
+                    <td>Nicolas Winding Refn</td>
+                </tr>
+                <tr>
+                    <td>Interestelar</td>
+                    <td>Ficção científica/Aventura</td>
+                    <td>Christopher Nolan</td>
+                </tr>
+                <tr>
+                    <td>DjangoLivre</td>
+                    <td>Faroeste/Drama</td>
+                    <td>Quentin Tarantino</td>
+                </tr>
+                <tr>
+                    <td>Nightcrawler</td>
+                    <td>Crime/Suspense</td>
+                    <td>Dan Gilroy</td>
+                </tr>
+                <tr>
+                    <td>Clube da luta</td>
+                    <td>Crime/Drama</td>
+                    <td>David Fincher</td>
+                </tr>
+                <tr>
+                    <td>Scarface</td>
+                    <td>Crime/Suspense</td>
+                    <td>Brian De Palma</td>
+                </tr>
+                <tr>
+                    <td>Black Mirror: Bandersnatch</td>
+                    <td>Crime/Suspense</td>
+                    <td>David Slade</td>
+                </tr>
+                <tr>
+                    <td>Era uma Vez em... Hollywood</td>
+                    <td>Drama/Comédia</td>
+                    <td>Quentin Tarantino</td>
+                </tr>
+                <tr>
+                    <td>Inception</td>
+                    <td>Ação/Ficção científica</td>
+                    <td>Christopher Nolan</td>
+                </tr>
+                <tr>
+                    <td>Blade Runner 2049</td>
+                    <td>Ficção científica/Ação</td>
+                    <td>Denis Villeneuve</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!--Rodapé-->
+    <footer>
+        <p>&copy; Catálogo de recomendações</p>
+        <a href="https://www.instagram.com/morkgud_/" target="_blank">
+            <i class="fab fa-instagram"></i>
+    </footer>
+</body>
+</html>

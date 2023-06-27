@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinopse</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(https://images5.alphacoders.com/100/1001614.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+    }
+
+    .sinopse {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #341933;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .sinopse h1 {
+      margin-bottom: 10px;
+    }
+
+    .sinopse p {
+      margin-bottom: 20px;
+    }
+
+    .image-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-2deg);
+      background-color: #1e111d;
+      z-index: -1;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    }
+    
+    .sinopse img {
+      max-width: 100%;
+      height: auto;
+      transform: rotate(2deg);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+      border: 2px solid #c31dd2;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #341933;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #1e111d;
+      color: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        padding: 10px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .sinopse {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+  <section>
+  <div class="container">
+    <div class="sinopse">
+      <div class="image-mask"></div>
+      <img src="../imgs/nightcrawlerfilme.jpg" alt="Imagem do Filme">
+      <h1>Nightcrawler</h1>
+      <p>Para enfrentar dificuldades de conseguir um emprego formal, o jovem Louis Bloom (Jake Gyllenhaal) decide entrar no agitado submundo do jornalismo criminal independente de Los Angeles. A fórmula é correr atrás de crimes e acidentes chocantes, registrar tudo e vender a história para veículos interessados.</p>
+      <p>Data de lançamento: 07/11/2014</p>
+      <p>Gênero: Crime/Thriller</p>
+      <p>Diretor: Dan Gilroy</p>
+      <p>Elenco: Jake Gyllenhaal, Rene Russo, Riz Ahmed</p>
+      <a class="button" href="../html/detalhes.html">Voltar para os detalhes dos filmes</a>
+    </div>
+  </div>
+</section>
+</main>
+</body>
+</html>

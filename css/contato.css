@@ -1,0 +1,142 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #221a3f;
+  color: #fff;
+  background-image: url(https://images5.alphacoders.com/100/1001614.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: background-color 1s, color 1s, background-image 1s;
+}
+
+header {
+  background-color: #221a3f;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos do header */
+  align-items: center; /* Alinha verticalmente ao centro */
+  padding: 20px;
+  color: #fff;
+  border-bottom: 4px solid #c31dd2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 1s, border-color 1s;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+/* Conteúdo */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.imagem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #c31dd2;
+  transition: transform 0.3s ease;
+}
+
+.imagem img:hover {
+  transform: scale(1.1);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.descricao {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.descricao p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  line-height: 1.6em;
+}
+
+/* Rodapé */
+footer {
+  background-color: #221a3f;
+  padding: 20px;  
+  text-align: center;
+  color: #fff;
+  border-top: 4px solid #c31dd2;
+  transition: background-color 1s, border-color 1s;
+}
+
+footer:hover {
+  background-color: #c31dd2;
+  border-color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    padding: 10px;
+  }
+
+  .menu li {
+    margin-right: 10px;
+  }
+
+  .imagem img {
+    width: 200px;
+  }
+
+  .descricao {
+    padding: 0 20px;
+  }
+
+  .descricao p {
+    -webkit-line-clamp: 3;
+  }
+}
+

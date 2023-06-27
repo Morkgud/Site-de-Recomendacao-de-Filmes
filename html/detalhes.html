@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Filme</title>
+  <link rel="stylesheet" href="../css/detalhes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="../javascript/detalhes.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Detalhes dos filmes</h1>
+    <nav>
+      <ul class="menu">
+        <li id="menu-item1"><a href="../html/menu.html">Menu</a></li>
+        <li id="menu-item2"><a href="../html/contato.html">Contato</a></li>
+        <li id="menu-item3"><a href="../html/catalogo.html">Catálogo</a></li>
+        <li id="menu-item4"><a href="../html/ranking.html">Ranking</a></li>
+        <button onclick="toggleColorsAndImage()">Alterar cores</button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detalhes-filme">
+      <div class="imagens" onclick="exibirPagina()">
+        <img src="#" alt="Imagem 1">
+        <h2 class="nome-filme"></h2>
+      </div>
+
+      <div class="navegacao">
+        <button class="anterior" onclick="filmeAnterior()">Anterior</button>
+        <button class="proximo" onclick="proximoFilme()">Próximo</button>
+        <button class="pagina" onclick="exibirPagina()">Ver Mais</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Catálogo de Filmes</p>
+    <a href="https://www.instagram.com/morkgud_/" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </footer>
+
+</body>
+</html>
