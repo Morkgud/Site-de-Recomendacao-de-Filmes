@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
-  <link rel="stylesheet" href="../css/contato.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script src="../javascript/contato.js"></script>
-  
-  <!-- CSS interno para centralizar os objetos do footer -->
-  <style>
-    .footer-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/contato.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="../javascript/contato.js"></script>
 
-    .footer-content p {
-      margin-right: 10px;
-    }
-  </style>
+    <!-- CSS interno para centralizar os objetos do footer -->
+    <style>
+      .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-</head>
-<body>
-   
-  <!--Links-->
-  <header class="header-footer">
-    <h1>Contato</h1>
-        <nav>
-            <ul class="menu">
-              <li id="menu-item1"><a href="../html/menu.html">Menu</a></li>
-              <li id="menu-item2"><a href="../html/catalogo.html">Catálogo</a></li>
-              <li id="menu-item3"><a href="../html/detalhes.html">Detalhes dos filmes</a></li>
-              <li id="menu-item4"><a href="../html/ranking.html">Ranking</a></li>
+      .footer-content p {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Links-->
+    <header class="header-footer">
+      <h1>Contato</h1>
+      <nav>
+        <ul class="menu">
+          <li id="menu-item1"><a href="../html/menu.html">Menu</a></li>
+          <li id="menu-item2"><a href="../html/catalogo.html">Catálogo</a></li>
+          <li id="menu-item3">
+            <a href="../html/detalhes.html">Detalhes dos filmes</a>
+          </li>
+          <li id="menu-item4"><a href="../html/ranking.html">Ranking</a></li>
 
-              <button onclick="toggleColorsAndImage()">Alterar cores</button>
-            </ul>
-        </nav>
-  </header>
-  
-  <div class="separador"></div>
-  
-  <!--Conteúdo da página-->
-  <section>
-    <main>
-      <div class="imagem">
-        <img src="../imgs/FotoDePerfil.jpg" alt="Minha foto">
-        <p class="descricao">Meu nome é José Arthur De Siqueira Vieira, eu sou aluno de Análise e desenvolvimento de sistemas e estou atualmente no terceiro período, meu RGM é: 29722969. O meu site é sobre um catálogo de Filmes e séries que eu particularmente gosto, vai ser praticamente uma recomendação de filmes, espero que quem veja goste do site.</p>
+          <button onclick="toggleColorsAndImage()">Alterar cores</button>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="separador"></div>
+
+    <!--Conteúdo da página-->
+    <section>
+      <main>
+        <div class="imagem">
+          <img src="../imgs/FotoDePerfil.jpg" alt="Minha foto" />
+          <p class="descricao">
+            Meu nome é José Arthur De Siqueira Vieira, eu sou aluno de Análise e
+            desenvolvimento de sistemas e estou atualmente no terceiro período,
+            meu RGM é: 29722969. O meu site é sobre um catálogo de Filmes e
+            séries que eu particularmente gosto, vai ser praticamente uma
+            recomendação de filmes, espero que quem veja goste do site.
+          </p>
+        </div>
+      </main>
+    </section>
+
+    <div class="separador"></div>
+
+    <!--Rodapé-->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Catálogo de Filmes</p>
+        <a href="https://www.instagram.com/morkgud_/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-    </main>
-  </section>
-  
-  <div class="separador"></div>
-  
-  <!--Rodapé-->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; Catálogo de Filmes</p>
-      <a href="https://www.instagram.com/jos_s.v/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
